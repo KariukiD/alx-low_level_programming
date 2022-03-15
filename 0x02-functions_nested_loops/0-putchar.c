@@ -1,47 +1,16 @@
-#include "holberton.h"
+#include <stdio.h>
 
-
-
-/**
-
- * main - Entry point
-
- *
-
- * Return: Always 0
-
- *
-
- */
-
-
-
-int main(void)
-
+int main()
 {
+	int i;
+	
+	putchar ('X');
+	putchar (' ');
+	for (i=1; i<=10; i++)
+		{
+			putchar ('!');
+		}	
+	putchar ('\n');
 
-	_putchar('H');
-
-	_putchar('o');
-
-	_putchar('l');
-
-	_putchar('b');
-
-	_putchar('e');
-
-	_putchar('r');
-
-	_putchar('t');
-
-	_putchar('o');
-
-	_putchar('n');
-
-	_putchar('\n');
-
-
-
-	return (0);
-
+	return 0;
 }
