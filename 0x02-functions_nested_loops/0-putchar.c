@@ -1,7 +1,5 @@
-#include "main.h"
-
-
-
+include <stdio.h>
+main.h()
 /**
 
  * main - prints my _putchar

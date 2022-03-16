@@ -1,5 +1,5 @@
-#include "main.h"
-
+include <stdio.h>
+include "main.h"	//included custom header file
 /**
 
  * print_alphabet - Prints the alphabet
