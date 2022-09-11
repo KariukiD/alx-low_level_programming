@@ -10,13 +10,13 @@ int main(void)
 {
 	int num;
 
-	for (num = 'o'; num < '99'; num++)
+	for (num = '00'; num < '99'; num++)
 	{
 		putchar((num/10) + '0');
 		putchar((num/10) + '0');
 	}
-	putchar(' ')
-	putchar(',')
+	putchar(' ');
+	putchar(',');
 	putchar('\n');
 	return (0);
 }
