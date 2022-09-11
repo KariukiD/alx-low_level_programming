@@ -8,12 +8,12 @@
  */ 
 int main(void)
 {
-	int i;
+	int num;
 
-	for (int i = 'o'; i < '99'; i++)
+	for (num = 'o'; num < '99'; num++)
 	{
-		putchar((i/10) + '0');
-		putchar((i/10) + '0');
+		putchar((num/10) + '0');
+		putchar((num/10) + '0');
 	}
 	putchar(' ')
 	putchar(',')
