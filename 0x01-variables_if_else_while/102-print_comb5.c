@@ -8,44 +8,14 @@
  */ 
 int main(void)
 {
-	int p = 48, q = 48, y = 48, x = 49;
+	int i;
 
-	while (p < 58)
+	for (int i = 'o'; i < 100; i++)
 	{
-		while (q < 58)
-		{
-			while (y < 58)
-			{
-				while (x < 58)
-				{
-					putchar(p);
-					putchar(q);
-					putchar(' ');
-					putchar(y);
-					putchar(x);
-					if (!(p == 57 &&
-								if (!(p == 57 &&
-										y == 57 &&
-										x == 57))
-								{
-								putchar(',');
-								putchar(' ');
-								}
-								x++;
-								}
-								y++;
-								x = 48;
-								}
-								q++;
-								q = p;
-								x = q + 1;
-								}
-								p++;
-								q = 48;
-								y = p;
-								x = q+ 1;
+		putchar((i/10) + '0');
+		putchar((i/10) + '0');
 	}
-	putchar('\n');
+	putchar("\n");
 	return (0);
 }
 
