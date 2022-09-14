@@ -1,22 +1,22 @@
 #include "main.h"
-
 /**
- * _islower - Short description, single line
- * @c: contains value to be compared
- * Return: Always 0.
+ * _isalpha - Shows 1 if the input is a 
+ * letter Another cases, shows 0
+ *
+ * @c: The character in ACII code
+ *
+ * Return: 1 for letters. 0 for the rest.
  */
-int _islower(int c)
+int _isalpha(int c)
 
 {
-
-if (c > 'a' && c < 'z')
-{
-return (1);
-}
-
-else
-{
-return (0);
-}
-
+	if ((c >= 97 && c <= 122) || (c >= 65 && c <= 90))
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
+	_putchar('\n');
 }
