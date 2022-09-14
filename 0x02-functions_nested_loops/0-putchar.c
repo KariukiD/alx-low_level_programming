@@ -1,8 +1,10 @@
 #include "main.h"
 /**
- * main
+ * main - Entry point
  * Write program that prints _putchar, followed by a new line and return to 0.
- */
+ *
+ * Return: nothing, return void
+ * /
 int main(void)
 {
 	_putchar('_');
