@@ -19,4 +19,4 @@ int main(void)
 	}
 	printf("%ld\n", tSum);
 	return (0);
-
+}
