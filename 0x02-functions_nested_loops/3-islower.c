@@ -4,7 +4,7 @@
  * @c: contains value to be compared
  * Return: Always 0.
  */
-int _islower(intc)
+int _islower(int c)
 
 {
 	if(c > 'a' && c < 'z')
