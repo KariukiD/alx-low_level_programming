@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * mul -multiplies two intergers.
  * @a: character a.
@@ -7,7 +6,6 @@
  * Return: multiplication.
  */
 int mul(int a, int b)
-
 {
 	int mult = a * b;
 	return (multi);
