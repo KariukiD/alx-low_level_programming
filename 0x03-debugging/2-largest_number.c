@@ -6,11 +6,11 @@
  * @b: second interger
  * @c: third interger
  * Return: largest number
- * */
+ */
 
 int largets_number(int a, int b, int c)
 {
-	int largets;
+	int largest;
 
 	if (a >= b && a >= c)
 	{
