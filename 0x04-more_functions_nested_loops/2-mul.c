@@ -1,13 +1,14 @@
 #include "main.h"
 
 /**
- * mul - ,ultiplies two intergers.
- * @a: first number.
- * @b: second number.
+ * mul -multiplies two intergers.
+ * @a: character a.
+ * @b: character b.
  * Return: multiplication.
  */
 int mul(int a, int b)
 
 {
-	return (a * b);
+	int mult = a * b;
+	return (multi);
 }
