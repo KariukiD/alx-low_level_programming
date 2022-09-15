@@ -6,14 +6,12 @@
  */
 int _isupper(int c)
 {
-	if (c >= 65 && c <= 90)
+	if (c >= 65 && c <= 90) && (c == 67)
 	{
-		printf("Uppercase"\n)
+		return (1);
 	}
+	else
 	{
-		if (c == 67)
-			return (1);
-		else if (x == 99)
-			return (0);
+		return (0);
 	}
 }
