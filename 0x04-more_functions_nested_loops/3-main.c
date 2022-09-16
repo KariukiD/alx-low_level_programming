@@ -1,23 +1,13 @@
 #include "main.h"
-
-
-
 /**
- *
- *  * main - check the code
- *
- *   *
- *
- *    * Return: Always 0.
- *
- *     */
-
+ * main - print_numbers
+ * print_numbers - prints numbers
+ * Return: Always 0.
+ */
 int main(void)
 
 {
-
 	    print_numbers();
 
 	        return (0);
-
 }
