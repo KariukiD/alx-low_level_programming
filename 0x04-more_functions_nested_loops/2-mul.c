@@ -7,8 +7,9 @@
  * @b: character b.
  * Return: multiplication.
  */
-int main(void)
+int mul(int a, int b)
 {
-	printf("%d\n", mul(a * b));
-	return (0);
+	int mult = a * b;
+
+	return (mult);
 }
