@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  * _isupper - checks for uppercase character
  * @letter: the character to be tracked
