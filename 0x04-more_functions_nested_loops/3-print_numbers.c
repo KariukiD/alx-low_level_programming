@@ -7,10 +7,10 @@
  */
 void print_most_numbers(void)
 {
-	int ch;
+	int num;
 
-	for (ch = 0; ch <= 9; ch++)
-		putchar('0' + ch);
-	putchar('\n');
-	return;
+	for (num = 0; num < 10; num++)
+		putchar(num);
+	putchar('\num');
+	return (0);
 }
