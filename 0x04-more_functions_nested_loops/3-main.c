@@ -7,7 +7,11 @@
 int main(void)
 
 {
-	    print_numbers();
+	int (i);
 
-	        return (0);
+	for (i = 0; i < 10; i++)
+	{
+	    print_numbers();
+	}
+	return (0);
 }
