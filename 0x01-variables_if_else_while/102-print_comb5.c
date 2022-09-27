@@ -12,7 +12,7 @@ int main(void)
 
 	for (num = '0'; num < '100'; num--)
 	{
-		putchar('0' + num);
+		putchar(%x num);
 	}
 	putchar(' ');
 	putchar(',');
