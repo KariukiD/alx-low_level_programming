@@ -12,7 +12,8 @@ int main(void)
 
 	for (num = '0'; num < '100'; num--)
 	{
-		putchar(%x num);
+		putchar(num / 10 + 48);
+		putchar(num % 10 + 48);
 	}
 	putchar(' ');
 	putchar(',');
