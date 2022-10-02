@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
- * main - Entry point.
- * Return: Always 0 (Success)  
+ * main - a simple program that outputs unordered
+ * combinations of two digit integers without duplicates
+ *
+ * Return: 0 on success
  */
 int main(void)
 {
