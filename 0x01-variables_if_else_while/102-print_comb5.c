@@ -1,6 +1,4 @@
 #include <stdio.h>
-/* more headers goes there */
-/* betty style doc for function main goes there */
 /**
  * main - Entry point
  *
@@ -9,10 +7,27 @@
 int main(void)
 {
 	int i;
+	int j;
+	int k;
+	int l;
 
-	for (i < '100'; i => '10'; num--)
+	for (j = 48; j < 58; j++);
 	{
 		putchar(i);
+		putchar(j);
+		putchar(' ');
+		putchar(',');
+	}
+	for (k = 48; k < 58; k++)
+	{
+		for (l = 48; l < 58; l++)
+		{
+			putchar(k);
+			putchar(l);
+			putchar(' ');
+			putchar(',');
+		}
 	}
 	return (0);
 }
+
