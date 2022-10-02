@@ -8,16 +8,11 @@
  */ 
 int main(void)
 {
-	int num;
+	int i;
 
-	for (num = '0'; num < '100'; num--)
+	for (i < '100'; i => '10'; num--)
 	{
-		putchar(num / 10 + 48);
-		putchar(num % 10 + 48);
+		putchar(i);
 	}
-	putchar(' ');
-	putchar(',');
-	putchar('\n');
 	return (0);
 }
-
