@@ -3,31 +3,39 @@
  * main - Entry point
  *
  * Return: Always 0 (Success)  
- */ 
+ */
 int main(void)
 {
+	int ifirst;
 	int i;
+	int jfirst;
 	int j;
-	int k;
-	int l;
 
-	for (j = 48; j < 58; j++);
+	for (ifirst = 48; ifirst < 58; ifirst++)
 	{
-		putchar(i);
-		putchar(j);
-		putchar(' ');
-		putchar(',');
-	}
-	for (k = 48; k < 58; k++)
-	{
-		for (l = 48; l < 58; l++)
+		for (i = 48; i < 58; i++)
 		{
-			putchar(k);
-			putchar(l);
-			putchar(' ');
-			putchar(',');
+			j = i + 1;
+			jfirst = ifirst;
+			for (; jfirst < 58; jfirst++)
+			{
+				for (; j < 58; j++)
+				{
+					putchar(ifirst);
+					putchar(i);
+					putchar(' ');
+					putchar(jfirst);
+					putchar(j);
+					if (ifirst != 57 || jfirst != 57 || i != 56 || j != 57)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
+				j = 48;
+			}
 		}
 	}
+	putchar('\n');
 	return (0);
 }
-
