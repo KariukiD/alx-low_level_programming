@@ -8,6 +8,11 @@
  */
 int print_last_digit(int n)
 {
-	_putchar('0' + (n / 10));
+	int r;
+	r = print_last_digit(98);
+	{
+		_putchar('0' + r);
+		_putchar('0' + (n / 10));
+	}
 	return (0);
 }
