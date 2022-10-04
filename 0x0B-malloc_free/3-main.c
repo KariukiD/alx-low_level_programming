@@ -1,39 +1,28 @@
-#include "main.h"
+include "main.h"
+#include <stdio.h>
 #include <stdlib.h>
 /**
- * str_concat- a function that concatenates strings
- * @s1: the first string
- * @s2: the second string
- * Return: the concatenated string
+ * print_grid - prints a grid of integers
+ * @grid: the address of the two dimensional grid
+ * @width: width of the grid
+ * @height: height of the grid
+ * Return: Nothing.
  */
-char *str_concat(char *s1, char *s2)
+void print_grid(int **grid, int width, int height)
 {
-	unsigned int i, j, c, d;
-	char *s3;
+	int w;
+	int h;
 
-	if (s1 == NULL)
-		s1 = "";
-	if (s2 == NULL)
-		s2 = "";
-
-	for (i = 0; s1[i] != '\0'; i++)
-		;
-	for (j = 0; s2[j] != '\0'; j++)
-		;
-
-	s3 = malloc((i * sizeof(*s1)) + (j * sizeof(*s2) + 1));
-
-	if (s3 == NULL)
-		return (NULL);
-	
-	for (c = 0, d = 0; c < (i + j + 1); c++)
+	h = 0;
+	while (h < height)
 	{
-		if (c < i)
-			s3[c] = s1[c];
-		else
-			s3[c] = s2[d++];
+		w = 0;
+		while (w < width)
+		{
+			printf("%d ", grid[h][w]);
+			w++;
+		}
+		printf("\n");
+		h++;
 	}
-
-	return (s3);
 }
-
