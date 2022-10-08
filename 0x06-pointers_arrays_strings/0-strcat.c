@@ -7,20 +7,23 @@
  */
 char *_strcat(char *dest, char *src)
 {
-	int count = 0, count2 = 0;
+	int w; /* getting length of dest*/
+	int x;
 
-	while (*(dest + count) != '\0')
+	w = 0;
+	while (dest[w] != '\0')
 	{
-		count++;
+		w++;
 	}
 
-	while (count2 >= 0)
+	x = 0;
+	while (src[x] != '\0')
 	{
-		*(dest + count) = *(src + count2);
-		if (*(src + count2) == '\0')
-			break;
-		count++;
-		count2++;
+		dest[w] = src[x];
+		w++;
+		x++;
 	}
-	return (dest);
+	dest[w] = '\0'
+
+		return (dest);
 }
