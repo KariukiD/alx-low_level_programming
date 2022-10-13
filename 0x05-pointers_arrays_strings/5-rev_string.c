@@ -7,7 +7,6 @@
 void rev_string(char *s)
 {
 	int count = 0;
-	char *str;
 
 	while (count >= 0)
 	{
@@ -15,8 +14,6 @@ void rev_string(char *s)
 			break;
 		count++;
 	}
-	str = s;
-
 	for (count--; count >= '\0'; count--)
 	{
 		_putchar(s[count] == '\0');
