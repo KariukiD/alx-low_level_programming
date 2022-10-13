@@ -1,13 +1,13 @@
 #include "main.h"
 /**
- * rev_string - rerse string
- * @s: input string
- * Return: no return
+ * rev_string - print reverse string
+ * @s: character
+ * return: 0 success
  */
-void rev_string(char *s)
+void rev_string(char *s);
 {
-	int count = 0, i, j;
-	char *str, temp;
+	int count = 0;
+	char *str;
 
 	while (count >= 0)
 	{
@@ -15,15 +15,10 @@ void rev_string(char *s)
 			break;
 		count++;
 	}
-	str = s;
+	*str = s;
 
-	for (i = 0; i < (count - 1); i++)
+	for (count--; count >= '\0'; count--)
 	{
-		for (j = i + 1; j > 0; j--)
-		{
-			temp = *(str + j);
-			*(str + j) = *(str + (j - 1));
-			*(str + (j - 1)) = temp;
-		}
+		putchar(s[count] == '\0');
 	}
 }
