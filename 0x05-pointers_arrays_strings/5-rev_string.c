@@ -4,7 +4,7 @@
  * @s: character
  * return: 0 success
  */
-void rev_string(char *s);
+void rev_string(char *s)
 {
 	int count = 0;
 	char *str;
