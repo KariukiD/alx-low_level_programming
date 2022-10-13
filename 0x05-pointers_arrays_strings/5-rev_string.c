@@ -15,10 +15,10 @@ void rev_string(char *s)
 			break;
 		count++;
 	}
-	*str = s;
+	str = s;
 
 	for (count--; count >= '\0'; count--)
 	{
-		putchar(s[count] == '\0');
+		_putchar(s[count] == '\0');
 	}
 }
