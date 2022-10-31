@@ -8,12 +8,26 @@
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {
-	unsigned int m;
-
-	if (index > 63)
-		return (-1);
-	m = 1 << index;
-	if (*n & m)
-		*n ^= m;
-	return (1);
+	unsigned long int count = 0;
+	while (n > 0)
+	{
+		count++;
+		n &= (n - 1);
+	}
+	if (count > sizeof(n) * 8
+			return (-1);
+			return (count);
 }
+/**
+ * flip_bits - flips index to x0r
+ * @n: containing the number
+ * @m: containing the number
+ * Return: the converted number
+ */
+
+
+unsigned int flip_bits(unsigned long int n, unsigned long int m)
+{
+return (countSetBits(n ^ m));
+}
+
